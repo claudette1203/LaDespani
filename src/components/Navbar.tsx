@@ -47,7 +47,7 @@ function Navbar() {
         <Grid container className="navbar">
             <ParallaxProvider>
                 <Grid item xs={12} className="node">
-                    <img src="6.jpeg" className="bg" alt="background" />
+                    <img src="1.jpg" className="bg" alt="background" />
                 </Grid>
                 <Grid item xs={12} className="node ttl">
                     <ParticleText styleProp={{ transform: `translateY(${-1 * scrollDistance * 0.2}px)` }} 
@@ -56,10 +56,10 @@ function Navbar() {
                     />
                 </Grid>
                 <Grid item xs={12} md={9} className="node text">
-                    {renderNavItem('EVENTS', 'upcoming')}
-                    {renderNavItem('HISTORY', 'history')}
+                    {renderNavItem('ABOUT', 'about')}
+                    {renderNavItem('ROOMS', 'rooms')}
                     {renderNavItem('PICTURES', 'pictures')}
-                    {renderNavItem('GUIDELINES', 'rules')}
+                    {renderNavItem('LOCATION', 'location')}
                 </Grid>
             </ParallaxProvider>
         </Grid>

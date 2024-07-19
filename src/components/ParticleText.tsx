@@ -34,7 +34,7 @@ function ParticleText({ styleProp, textSizeProp, canvasWidthVal, scanStepVal, pa
 	const canvasWidth = canvasWidthVal;
 	const canvasHeight = 800;
 	const textSize = textSizeProp;
-	const text = "The Grill";
+	const text = "LaDespani";
 	const scanStep = scanStepVal;
 	const particleSize = particleSizeVal;
 	const throttleTime = 100;
