@@ -1,12 +1,12 @@
 :root {
-    --primaryColor: #0f3d2a;
-    --primaryColorFade: #093523;
-    --secondaryColor: #093523;
-    --backgroundColor: #fff7e6;
-    --backgroundColorFade: #283618a3;
+    --primaryColor: #c09d77;
+    --primaryColorFade: #8b4513;
+    --secondaryColor: #8b4513;
+    --backgroundColor: #dcdcc6;
+    --backgroundColorFade: #dcdcc6;
 
     --page1: #0f3d2a;
-    --page2: #093523;
+    --page2: #004d40;
 
     --ftext1: #0f3d2a;
     --ftext2: #0f3d2a;

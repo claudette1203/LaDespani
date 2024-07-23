@@ -20,21 +20,21 @@ $opacityVal: 0.9;
     var(--gradientDeg),
     transparent 0%,
     transparent 6%,
-    #98ec8dc2 13%,
-    #6bc45fc2 15%,
-    #b6e6afc2 17%,
+    #004d4066 13%, /* Dark Green with transparency */
+    #003b2f66 15%, /* Darker shade of Dark Green */
+    #00594d66 17%, /* Lighter shade of Dark Green */
     transparent 25%,
     transparent 32%,
-    #eee89b52 34%,
-    #f6f87e81 36%,
-    #eff17473 38%,
+    #f5f5dc85 34%, /* Light Beige with transparency */
+    #e5e5cb85 36%, /* Slightly darker Light Beige */
+    #d5d5bc85 38%, /* Even darker Light Beige */
     transparent 41%,
     transparent 67%,
-    #44643271 69%,
-    #4d7a3271 74%,
-    #50962871 79%,
+    #8b451351 69%, /* Warm Brown with transparency */
+    #7a3e3051 74%, /* Slightly darker Warm Brown */
+    #6a382751 79%, /* Even darker Warm Brown */
     transparent 84%,
-    transparent 100%,
+    transparent 100%
   );
   background-size: 200% 100%;
   mask-image: linear-gradient(to bottom, black 0%, transparent 100%),

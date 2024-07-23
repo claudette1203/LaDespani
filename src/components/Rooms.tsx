@@ -8,28 +8,28 @@ function Rooms() {
             images: ["1_1.jpg", "1_2.jpg", "1_3.jpg", "1_4.jpg"],
             description: {
                 title: "Room 1",
-                text: "Description of room1",
+                text: "Un dormitor cu pat dublu, TV, și baie proprie dotată cu cadă.",
             },
         },
         {
             images: ["2_1.jpg", "2_2.jpg", "2_3.jpg", "2_4.jpg"],
             description: {
                 title: "Room 2",
-                text: "Description of room2",
+                text: "Un dormitor cu pat dublu, TV, și baie proprie dotată cu cadă.",
             },
         },
         {
             images: ["3_1.jpg", "3_2.jpg", "3_3.jpg", "3_4.jpg", "3_5.jpg"],
             description: {
                 title: "Room 3",
-                text: "Description of room3",
+                text: "Un dormitor cu pat dublu, TV, și baie proprie dotată cu cadă. De asemeni, are și un balcon cu vedere la grădină.",
             },
         },
         {
             images: ["4_1.jpg", "4_2.jpg", "4_3.jpg", "4_4.jpg"],
             description: {
                 title: "Room 4",
-                text: "Description of room4",
+                text: "Un dormitor cu pat dublu, TV, și baie proprie dotată cu cadă. De asemeni, are și un balcon cu vedere la grădină.",
             },
         },
     ];

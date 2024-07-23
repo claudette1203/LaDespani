@@ -232,6 +232,10 @@ function ParticleText({ styleProp, textSizeProp, canvasWidthVal, scanStepVal, pa
 				p.textSize(textSize);
 				let textBoxWidth = p.textWidth(system.text);
 				setTextWidth(textBoxWidth);
+
+				const adjustedCanvasWidth = Math.max(canvasWidthVal, textBoxWidth + 100); // Add padding
+				p.resizeCanvas(adjustedCanvasWidth, canvasHeight);
+				
 				// text() -> (text, x, y); x and y set the coordinates of the text's bottom-left corner
 				p.text(system.text, (p.width - textBoxWidth) / 2, p.height / 2); // Why does textBoxWidth returns 29.something for Matei with textSize 300?
 

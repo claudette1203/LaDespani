@@ -1,4 +1,3 @@
-import React from "react";
 import { Card, CardContent, Grid } from "@mui/material";
 import MediaSlider from "./MediaSlider";
 import "../styles/Pictures.scss";
@@ -36,7 +35,7 @@ function Pictures() {
                     <Card className="card">
                         <CardContent>
                             <p className="chtext secondary">
-                                Pensiunea La Despani oferă oaspeților săi o experiență de neuitat. Pe lângă comfortul camerelor, pesiunea este dotată cu piscină, saună o terasă frumoasă acoperită în grădină și alte facilități pentru relaxare.
+                                Pensiunea La Despani oferă oaspeților săi o experiență de neuitat. Pe lângă comfortul camerelor, pesiunea este dotată cu piscină, saună, o terasă frumoasă acoperită în grădină și alte facilități pentru relaxare.
                             </p>
                         </CardContent>
                     </Card>

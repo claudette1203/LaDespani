@@ -1,13 +1,5 @@
-import Delete from '@mui/icons-material/Delete';
-import Fastfood from '@mui/icons-material/Fastfood';
-import LocalLibrary from '@mui/icons-material/LocalLibrary';
-import OutdoorGrill from '@mui/icons-material/OutdoorGrill';
-import Pool from '@mui/icons-material/Pool';
-import SmokeFree from '@mui/icons-material/SmokeFree';
-import { Card, CardContent, Grid, SvgIconProps } from '@mui/material';
-import { ComponentType, ReactElement } from 'react';
+import { Card, CardContent, Grid } from '@mui/material';
 import '../styles/Location.scss';
-import React from 'react';
 
 function Location() {
     
@@ -25,7 +17,7 @@ function Location() {
                 <Card className="card">
                     <CardContent>
                         <p className="chtext secondary">
-                            Pensiunea este situată
+                            Pensiunea oferă o locație perfectă pentru un sejur la Brașov. Situată la doar 10 minute de centrul orașului, aceasta reprezintă locul ideal pentru a vizita toate atracțiile turistice din zonă, dar și pentru o vacanță relaxantă.
                         </p>
                     </CardContent>
                 </Card>
