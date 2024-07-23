@@ -1,15 +1,15 @@
 :root {
-    --primaryColor: #BC6C25;
-    --primaryColorFade: #f9ad6b;
-    --secondaryColor: #fefae0;
-    --backgroundColor: #606c38d7;
-    --backgroundColorFade: #283618a3;
+    --primaryColor: #c09d77;
+    --primaryColorFade: #8b4513;
+    --secondaryColor: #8b4513;
+    --backgroundColor: #dcdcc6;
+    --backgroundColorFade: #dcdcc6;
 
-    --page1: #faf9f0;
-    --page2: #e4d88e;
+    --page1: #0f3d2a;
+    --page2: #004d40;
 
-    --ftext1: #ffffff;
-    --ftext2: #fff8a6
+    --ftext1: #0f3d2a;
+    --ftext2: #0f3d2a;
 }
 
 body {

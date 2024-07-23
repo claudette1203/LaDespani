@@ -2,9 +2,9 @@ import Navbar from "../components/Navbar";
 import Pictures from "../components/Pictures";
 import { Divider } from "@mui/material";
 import Footer from "../components/Footer";
-import Rules from "../components/Rules";
-import History from "../components/History";
-import Upcoming from "../components/Upcoming";
+import Location from "../components/Location";
+import Rooms from "../components/Rooms";
+import About from "../components/About";
 import GodRays from "../components/GodRays";
 
 function MainPage() {
@@ -12,10 +12,10 @@ function MainPage() {
         <>
             <Navbar />
             <Divider />
-            <Upcoming />
-            <History />
+            <About />
+            <Rooms />
             <Pictures />
-            <Rules />
+            <Location />
             <Footer />
             <GodRays />
         </>

@@ -1,7 +1,6 @@
 import { Grid, Tooltip } from "@mui/material";
 import "../styles/Footer.css";
 import FacebookIcon from '@mui/icons-material/Facebook';
-import GitHubIcon from '@mui/icons-material/Github';
 import InstagramIcon from '@mui/icons-material/Instagram';
 
 function Footer() {
@@ -9,38 +8,19 @@ function Footer() {
         <Grid container className="footer">
             <Grid container className="row margin">
                 <div className="ftext small">
-                    Special thanks to our partners:
+                    Contact tel: +40721373747
                 </div>
-            </Grid>
-            <Grid container className="row margin overlay">
-                <Grid item xs={5} md={3}>
-                    <div className="lcontainer ftext">
-                        <img src="bg-society.png" alt="Backgammon Society" className="logo" />
-                        Backgammon Society
-                    </div>
-                </Grid>
-                <Grid item xs={5} md={3}>
-                    <div className="lcontainer ftext">
-                        <img src="BSA.png" alt="Backgammon Society" className="logo" />
-                        Balcan Student Association
-                    </div>
-                </Grid>
             </Grid>
             <Grid container className="row">
                 <Grid item xs={3} md={2}><div className="line" /></Grid>
 
                 <Grid item xs={4} md={2} className="social">
-                    <a href="https://fb.me/e/6LMXKsHgr">
-                        <Tooltip title="Facebook Event">
+                    <a href="https://www.facebook.com/ladespani.guesthouse">
+                        <Tooltip title="Facebook">
                             <FacebookIcon className="icon" />
                         </Tooltip>
                     </a>
-                    <a href="https://github.com/Gargant0373/TheGrill">
-                        <Tooltip title="GitHub Repository">
-                            <GitHubIcon className="icon" />
-                        </Tooltip>
-                    </a>
-                    <a href="https://www.instagram.com/thegrill.space/">
+                    <a href="https://www.instagram.com/ladespaniguesthouse/">
                         <Tooltip title="Instagram">
                             <InstagramIcon className="icon" />
                         </Tooltip>
@@ -52,7 +32,7 @@ function Footer() {
             <Grid container className="row">
                 <Grid item xs={12}>
                     <div className="ftext">
-                        For Students, With Students, From Students
+                        Pensiunea LaDespani
                     </div>
                 </Grid>
             </Grid>
