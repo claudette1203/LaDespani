@@ -3,10 +3,12 @@ import '../styles/Navbar.scss';
 import { Parallax, ParallaxProvider } from 'react-scroll-parallax';
 import { useEffect, useState } from 'react';
 import ParticleText from './ParticleText';
+import { useLanguage } from './LanguageProvider';
 
 function Navbar() {
     const [smallScreen, setSmallScreen] = useState(false);
     const [scrollDistance, setScrollDistance] = useState(0);
+    const { language, toggleLanguage } = useLanguage();
 
     useEffect(() => {
         const handleScroll = () => setScrollDistance(window.scrollY);
@@ -49,6 +51,9 @@ function Navbar() {
                 <Grid item xs={12} className="node">
                     <img src="1.jpg" className="bg" alt="background" />
                 </Grid>
+                <Grid item xs={12} className="node text language" onClick={toggleLanguage}>
+                    <img src={language === 'RO' ? 'RO.png' : 'EN.png'} className="icon" alt={language} />
+                </Grid>   
                 <Grid item xs={12} className="node ttl">
                     <ParticleText styleProp={{ transform: `translateY(${-1 * scrollDistance * 0.2}px)` }} 
                     textSizeProp={smallScreen ? 95 : 180} canvasWidthVal={smallScreen ? 380 : 800} 

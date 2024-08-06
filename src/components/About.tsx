@@ -1,8 +1,11 @@
 import { useEffect, useRef } from "react";
 import { Card, CardContent, Grid } from "@mui/material";
 import "../styles/About.scss";
+import { useLanguage } from "./LanguageProvider";
 
 function About() {
+    const { language } = useLanguage();
+
     const options = {
         root: null, // the browser viewport is used
         rootMargin: '0px',
@@ -36,15 +39,24 @@ function About() {
     }, []);
 
     const textContent = {
-        title: 'ABOUT',
-        subtitle: "Bine ați venit!",
-        content: 'Pensiunea La Despani este situată într-o zonă rezidențială din Brașov, la 15 minute de mers pe jos de gara centrală și la 30 de minute de mers pe jos de centrul istoric al orașului. Puteți ajunge în centru și cu autobuzul. <br />Pensiunea se află la 300 de metri de Autogara 2, de unde pleacă autobuzele spre Castelul Bran și spre Cetatea Râșnov, astfel încât veți putea explora zona. La doar 100 de metri de Pensiunea La Despani se află supermarketul Sergiana, deschis non-stop. <br />Vă veți putea distra în cel mai mare parc acvatic acoperit din România, Paradisul Acvatic, situat la doar 1 km de proprietate. <br />Pensiunea La Despani are o terasă frumoasă acoperită în grădină, precum și o piscină și alte facilități pentru relaxare. Oaspeții pot găti în bucătăria comună excelent utilată. <br />Personalul internațional vorbește română, engleză, germană, italiană, estonă, finlandeză și rusă.',
+        EN: {
+            title: 'ABOUT',
+            subtitle: 'Welcome!',
+            content: 'Guesthouse La Despani is located in a residential area of Brașov, a 15-minute walk from the central train station and a 30-minute walk from the historic city center. You can also reach the center by bus. <br />The guesthouse is 300 meters from Bus Station 2, from where buses leave for Bran Castle and Râșnov Fortress, so you can explore the area. The Sergiana supermarket, open 24/7, is just 100 meters from Guesthouse La Despani. <br />You can have fun in the largest indoor water park in Romania, Aqua Paradise, located just 1 km from the property. <br />Guesthouse La Despani has a beautiful covered terrace in the garden, as well as a swimming pool and other relaxation facilities. Guests can cook in the well-equipped shared kitchen. <br />The international staff speaks Romanian, English, German, Italian, Estonian, Finnish, and Russian.',
+        },
+        RO: {
+            title: 'DESPRE',
+            subtitle: 'Bine ați venit!',
+            content: 'Pensiunea La Despani este situată într-o zonă rezidențială din Brașov, la 15 minute de mers pe jos de gara centrală și la 30 de minute de mers pe jos de centrul istoric al orașului. Puteți ajunge în centru și cu autobuzul. <br />Pensiunea se află la 300 de metri de Autogara 2, de unde pleacă autobuzele spre Castelul Bran și spre Cetatea Râșnov, astfel încât veți putea explora zona. La doar 100 de metri de Pensiunea La Despani se află supermarketul Sergiana, deschis non-stop. <br />Vă veți putea distra în cel mai mare parc acvatic acoperit din România, Paradisul Acvatic, situat la doar 1 km de proprietate. <br />Pensiunea La Despani are o terasă frumoasă acoperită în grădină, precum și o piscină și alte facilități pentru relaxare. Oaspeții pot găti în bucătăria comună excelent utilată. <br />Personalul internațional vorbește română, engleză, germană, italiană, estonă, finlandeză și rusă.',
+        }
     };
+    
+    const content = textContent[language];
 
     return (
         <Grid container className="about" id="about">
             <Grid item xs={12} className="ptitle">
-                <h1 className="chtitle">{textContent.title}</h1>
+                <h1 className="chtitle">{content.title}</h1>
             </Grid>
             <Grid item xs={12} className="row">
                 <Grid ref={imgShineContainerRef} item xs={12} md={5} className="imgShineContainer">
@@ -55,11 +67,11 @@ function About() {
                         <Grid item xs={12} md={10}>
                             <CardContent>
                                 <div className="chsubtitle secondary bold underlined center">
-                                    {textContent.subtitle}
+                                    {content.subtitle}
                                 </div>
                                 <p 
                                     className="chtext secondary"
-                                    dangerouslySetInnerHTML={{ __html: textContent.content }}
+                                    dangerouslySetInnerHTML={{ __html: content.content }}
                                 ></p>
                             </CardContent>
                         </Grid>

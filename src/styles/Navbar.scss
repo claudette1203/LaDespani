@@ -32,21 +32,37 @@
     justify-content: flex-end;
 }
 
+
 .navbar .node .item {
     margin: 0 10px;
-
+    
     z-index: 1;
-
+    
     color: var(--secondaryColor);
     font-weight: bold;
-
+    
     cursor: pointer;
 }
 
+.navbar .node.text.language {
+    position: absolute;
+    margin: 10px 10px;
+    top: 10px;
+    right: 10px;
+    max-width: none;
+    justify-content: flex-end;
+    z-index: 2;
+}
+
 .navbar img {
-    min-height: 100vh;
+    height: 100vh;
 
     object-fit: cover;
+}
+
+.navbar .icon {
+    width: 50px; /* Set the width of the language icon */
+    height: 50px; /* Set the height of the language icon */
 }
 
 .navbar .item.scrollsection {
