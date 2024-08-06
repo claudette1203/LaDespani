@@ -2,8 +2,11 @@ import { Grid, Tooltip } from "@mui/material";
 import "../styles/Footer.css";
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import { useLanguage } from "./LanguageProvider";
 
 function Footer() {
+    const { language } = useLanguage();
+
     return <>
         <Grid container className="footer">
             <Grid container className="row margin">
@@ -32,7 +35,7 @@ function Footer() {
             <Grid container className="row">
                 <Grid item xs={12}>
                     <div className="ftext">
-                        Pensiunea LaDespani
+                        {language === "RO" ? "Pensiunea LaDespani" : "LaDespani Guesthouse"}
                     </div>
                 </Grid>
             </Grid>

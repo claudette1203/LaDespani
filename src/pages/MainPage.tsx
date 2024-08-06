@@ -6,18 +6,21 @@ import Location from "../components/Location";
 import Rooms from "../components/Rooms";
 import About from "../components/About";
 import GodRays from "../components/GodRays";
+import { LanguageProvider } from "../components/LanguageProvider";
 
 function MainPage() {
     return (
         <>
-            <Navbar />
-            <Divider />
-            <About />
-            <Rooms />
-            <Pictures />
-            <Location />
-            <Footer />
-            <GodRays />
+            <LanguageProvider>
+                <Navbar />
+                <Divider />
+                <About />
+                <Rooms />
+                <Pictures />
+                <Location />
+                <Footer />
+                <GodRays />
+            </LanguageProvider>
         </>
     );
 }
