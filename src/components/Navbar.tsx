@@ -56,7 +56,7 @@ function Navbar() {
                 </Grid>   
                 <Grid item xs={12} className="node ttl">
                     <ParticleText styleProp={{ transform: `translateY(${-1 * scrollDistance * 0.2}px)` }} 
-                    textSizeProp={smallScreen ? 95 : 180} canvasWidthVal={smallScreen ? 380 : 800} 
+                    textSizeProp={smallScreen ? 75 : 160} canvasWidthVal={smallScreen ? (window.innerWidth - 10) : 800} 
                     scanStepVal={smallScreen ? 220 : 160} particleSizeVal={smallScreen ? 2.6 : 3}
                     />
                 </Grid>

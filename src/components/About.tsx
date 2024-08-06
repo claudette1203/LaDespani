@@ -64,7 +64,7 @@ function About() {
                 </Grid>
                 <Grid item xs={11} md={6} className="col">
                     <Card className="card">
-                        <Grid item xs={12} md={10}>
+                        <Grid item xs={11} md={10}>
                             <CardContent>
                                 <div className="chsubtitle secondary bold underlined center">
                                     {content.subtitle}
