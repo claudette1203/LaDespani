@@ -1,6 +1,6 @@
 
-# TheGrill
-The page was created as an invitation to the TU Delft Grill. The Grill is an event taking place on a sunny day in Hondenstrandje, Delftse Hout, where people grill, drink beer, and sometimes swim with dogs.
+# LaDespani
+This page was created for the Guest House LaDespani.
 
 The website is published on GitHub Pages [here](https://thegrill.space)
 ## Stack
